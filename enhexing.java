@@ -12,12 +12,6 @@ class enhexing
         {
         File path = new File("Files/"+args[0]);
         byte[] array = turnBytes(path);
-        File obj = new File("Copy of " + args[0]);
-        obj.createNewFile();
-        FileOutputStream fos = new FileOutputStream(obj);
-        fos.write(array);
-        fos.flush();
-        fos.close();
         String fullBytes="";
         for(byte b : array)
         {

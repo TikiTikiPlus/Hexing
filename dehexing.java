@@ -27,7 +27,7 @@ class dehexing
         for(int a = 0; a < ans.length; a++)
         {
             writer.write(ans[a]);
-            
+            System.out.println(ans[a]);   
         }
         writer.flush();
         writer.close();
